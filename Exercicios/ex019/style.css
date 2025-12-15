@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(4, 109, 0);
+
+}
+h1#principal {
+    text-align: center;
+    color: white;
+    background-color: rgb(4, 109, 0);
+}
+h2 {
+    color: rgb(51, 77, 49);
+}
+
+/* Alinhamentos */
+text-align: center; - /* Alinha o texto ao centro */
+text-align: right; - /* Alinha o texto à direita */
+text-align: left; - /* Alinha o texto à esquerda */
+text-align: justify; - /* Justifica o texto */
+
+
+/* Seletores  * 
+Elemento - seleciona todos os elementos do tipo especificado
+#id - seleciona o elemento com o id especificado
+.class - seleciona todos os elementos com a classe especificada
+[atributo="valor"] - seleciona todos os elementos com o atributo e valor especificados
+Pseudoclasse - seleciona elementos em um estado específico, como :hover para quando o mouse está sobre o elemento
+Pseudoelemento - seleciona uma parte específica de um elemento, como ::first-letter para a primeira letra de um parágrafo
+*/
+
+.basico {
+    color: green;
+}
+.intermediario {
+    color: yellow;
+}
+.avancado {
+    color: red;
+}

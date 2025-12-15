@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+
+        /*
+        Medidas ABSOLUTAS de fonte:
+        cm - centímetros
+        mm - milímetros
+        in - polegadas
+        px - pixels
+        pt - pontos (1pt = 1/72 de polegada)
+        pc - picas (1pc = 12 pontos)
+
+        Medidas RELATIVAS de fonte:
+        em - relativa ao elemento pai
+        rem - relativa ao elemento raiz (html)
+        vw - relativa à largura da viewport
+        vh - relativa à altura da viewport
+        % - relativa ao elemento pai
+        */
+
+        /*
+        Medidas Oficias recomendadas para fontes:
+        px e em - mais usadas na web
+        */
+
+        font-size: 1em;
+        font-weight: normal;
+        font-style: italic;
+        text-decoration: underline;
+        /*light, normal, bold, bolder, lighter, 100 a 900 */
+
+        
+        /* Shothand font 
+        font: font-style font-weight font-size/line-height font-family;
+        */
+        font: italic bold 3em Arial, Helvetica, sans-serif;
+
+    }
+
+</style>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vel incidunt
+         quaerat magnam aspernatur atque dolore ipsam debitis! Modi quaerat odio 
+         deleniti minus ipsa aperiam at recusandae deserunt dolores veritatis.</p>
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum fuga 
+        recusandae deleniti quae perferendis nulla et dolorem quo voluptates magnam 
+        a quasi explicabo, in non quaerat, aut iusto accusamus quos.</p>
+</body>
+</html>
