@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            color: white;
+            background-color: #383838;
+            position: relative;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        .num{
+            text-align: right;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(even){
+            background-color: white;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha segunda tabela</h1>
+    <!--
+         ANATOMIA PARA TABELAS GRANDES
+            TABLE = TABELA
+            CAPTION = TÍTULO DA TABELA
+                THEAD = TABLE HEAD (CABEÇALHO DA TABELA)
+                        TR = TABLE ROW (LINHA DA TABELA)
+                        TD = TABLE DATA (DADO DA TABELA)
+                        TH = TABLE HEADER (CABEÇALHO DA TABELA)
+                TBODY = TABLE BODY (CORPO DA TABELA)
+                        TR = TABLE ROW (LINHA DA TABELA)
+                        TD = TABLE DATA (DADO DA TABELA)
+                        TH = TABLE HEADER (CABEÇALHO DA TABELA)
+                TFOOT = TABLE FOOT (RODAPÉ DA TABELA)
+                        TR = TABLE ROW (LINHA DA TABELA)
+                        TD = TABLE DATA (DADO DA TABELA)
+                        TH = TABLE HEADER (CABEÇALHO DA TABELA)
+    -->
+    <table>
+        <caption>População dos estados brasileiros</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Populacao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.649.132</td>
+            </tr>
+             <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.399.348</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.366.189</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15.203.934</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.516.840</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.422.973</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.674.793</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.690.745</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.338.473</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.113.540</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.059.905</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">906.876</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">652.713</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.649.132</td>
+            </tr>
+             <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.399.348</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.366.189</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15.203.934</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.516.840</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.422.973</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.674.793</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.690.745</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.338.473</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.113.540</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.059.905</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">906.876</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">652.713</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.649.132</td>
+            </tr>
+             <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.399.348</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.366.189</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15.203.934</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.516.840</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.422.973</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.674.793</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.690.745</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.338.473</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.113.540</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.059.905</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">906.876</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">652.713</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td scope="row">Total de habitantes</td>
+                <td class="num">213.317.639</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
